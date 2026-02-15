@@ -186,6 +186,63 @@ Eine saubere Codebasis ermöglicht:
 - Infrastructure as Code Integration
 - Skalierbare Deployments in Kubernetes
 
+---
+
+# 2️⃣ Dependencies
+
+## Definition
+
+Abhängigkeiten müssen explizit deklariert und isoliert werden.
+
+Eine Anwendung darf sich nicht auf implizite systemweite Pakete verlassen.
+
+---
+
+## Explizite Deklaration
+
+Beispiel (Python):
+
+requirements.txt
+
+Flask==2.3.2  
+requests==2.31.0  
+
+Versionen müssen festgelegt werden, um Konsistenz zwischen Entwicklungs- und Produktionsumgebung zu gewährleisten.
+
+---
+
+## Isolation
+
+Abhängigkeiten müssen vom Host-System isoliert sein.
+
+Möglichkeiten:
+
+- Python Virtual Environments
+- Docker Container
+
+---
+
+## Docker als universelle Lösung
+
+Docker kapselt:
+
+- Anwendungscode
+- Abhängigkeiten
+- Runtime
+- System-Tools
+
+Dadurch entsteht eine reproduzierbare, portable Umgebung.
+
+---
+
+## DevOps-Relevanz
+
+Sauber deklarierte und isolierte Abhängigkeiten ermöglichen:
+
+- Reproduzierbare Builds
+- Stabile CI/CD Pipelines
+- Konsistente Deployments
+- Skalierbarkeit in Container-Umgebungen
 
 
 
