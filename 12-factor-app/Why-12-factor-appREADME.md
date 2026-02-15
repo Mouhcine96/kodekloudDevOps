@@ -107,55 +107,13 @@ Sie müssen portabel, skalierbar und unabhängig von der Infrastruktur funktioni
 
 Genau dafür existiert die 12-Factor App Methodik.
 
+---
+
 # 1️⃣ Codebase
 
 ## Definition
 
-Eine Anwendung hat genau eine Codebasis, die in einem Versionskontrollsystem verwaltet wird (z. B. Git).
-
-Mehrere Deployments (z. B. Development, Staging, Production) greifen auf dieselbe Codebasis zurück.
-
----
-
-## Ziel
-
-- Keine getrennten Repositories für dev/prod
-- Keine Code-Duplikate
-- Keine Umgebungs-spezifischen Branches als Ersatz für Konfiguration
-
----
-
-## Falsch
-
-- app-dev Repository
-- app-prod Repository
-- Manuelle Codeanpassungen pro Umgebung
-
----
-
-## Richtig
-
-- Ein Repository
-- Unterschiedliche Deployments über Konfiguration
-- CI/CD Pipeline für alle Umgebungen
-
----
-
-## DevOps-Bezug
-
-Eine saubere Codebase ermöglicht:
-
-- Automatisierte Builds
-- Containerisierung
-- Reproduzierbare Deployments
-- Continuous Integration
-- Infrastructure as Code Integration
-- 
-# 1️⃣ Codebase
-
-## Definition
-
-Eine Anwendung hat genau eine Codebasis, die in einem Versionskontrollsystem (z. B. Git) verwaltet wird.
+Eine Anwendung hat genau **eine Codebasis**, die in einem Versionskontrollsystem (z. B. Git) verwaltet wird.
 
 Mehrere Deployments (Development, Staging, Production) greifen auf dieselbe Codebasis zurück.
 
@@ -164,9 +122,28 @@ Mehrere Deployments (Development, Staging, Production) greifen auf dieselbe Code
 ## Ziel
 
 - Einheitliche Quelle für den Anwendungscode
-- Vermeidung von Code-Duplikaten
-- Saubere Zusammenarbeit im Team
+- Keine getrennten Repositories für dev/prod
+- Keine Code-Duplikate
 - Reproduzierbare Builds
+- Saubere Team-Zusammenarbeit
+
+---
+
+## Falsch
+
+- app-dev Repository
+- app-prod Repository
+- Manuelle Codeanpassungen pro Umgebung
+- Mehrere unabhängige Anwendungen in derselben Codebasis
+
+---
+
+## Richtig
+
+- Ein Repository pro Anwendung
+- Unterschiedliche Deployments über Konfiguration (Environment Variables)
+- CI/CD Pipeline für alle Umgebungen
+- Versionierung über Git
 
 ---
 
@@ -177,13 +154,13 @@ Git ermöglicht:
 - Parallele Entwicklung
 - Versionierung
 - Nachvollziehbarkeit
-- Zusammenarbeit über zentrale Plattformen wie GitHub oder GitLab
+- Zentrale Zusammenarbeit (GitHub, GitLab, Bitbucket)
 
 ---
 
 ## Microservices Kontext
 
-Jeder eigenständige Service hat eine eigene Codebasis.
+Jeder eigenständige Service besitzt eine eigene Codebasis.
 
 Mehrere unabhängige Anwendungen dürfen sich keine Codebasis teilen.
 
@@ -191,11 +168,13 @@ Mehrere unabhängige Anwendungen dürfen sich keine Codebasis teilen.
 
 ## DevOps-Relevanz
 
-Eine einzelne Codebasis ermöglicht:
+Eine saubere Codebasis ermöglicht:
 
 - Automatisierte Builds
 - Containerisierung
+- Reproduzierbare Docker Images
 - CI/CD Pipelines
-- Skalierbare Deployments
 - Infrastructure as Code Integration
+- Skalierbare Deployments in Kubernetes
+
 
