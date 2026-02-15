@@ -113,4 +113,4 @@ The custom Apache user kareem has been successfully created on Application Serve
 - UID 1126
 - Dedicated application directory
 - Restriced access permissions
-# The implementation aligns with Nautilus application tier security design principles.
+The implementation aligns with Nautilus application tier security design principles.
