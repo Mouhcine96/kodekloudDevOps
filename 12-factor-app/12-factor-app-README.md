@@ -3,6 +3,8 @@
 ## Inhaltsverzeichnis
 
 1. Codebase
+2. Dependencies
+3. Concurrency
 
 
 ---
@@ -244,5 +246,45 @@ Sauber deklarierte und isolierte Abhängigkeiten ermöglichen:
 - Konsistente Deployments
 - Skalierbarkeit in Container-Umgebungen
 
+---
+
+# 8️⃣ Concurrency
+
+## Definition
+
+Anwendungen sollen horizontal skalieren, indem mehrere Prozesse gleichzeitig ausgeführt werden.
+
+---
+
+## Vertikale vs. Horizontale Skalierung
+
+Vertikal:
+- Mehr CPU
+- Mehr RAM
+- Größerer Server
+
+Horizontal:
+- Mehr Instanzen starten
+- Load Balancer einsetzen
+- Skalierung über Replikation
+
+---
+
+## Voraussetzung: Stateless Design
+
+Damit horizontale Skalierung funktioniert, darf die Anwendung keinen lokalen Zustand speichern.
+
+Sessions und persistente Daten müssen extern gespeichert werden (z. B. Datenbank, Redis).
+
+---
+
+## DevOps-Relevanz
+
+Concurrency ist die Grundlage für:
+
+- Docker Container Scaling
+- Kubernetes Replicas
+- Auto Scaling Groups
+- Cloud-native Architektur
 
 
