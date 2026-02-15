@@ -3,8 +3,7 @@
 ## Inhaltsverzeichnis
 
 1. Codebase
-2. Dependencies
-3. Config
+
 
 ---
 
@@ -186,6 +185,7 @@ Eine saubere Codebasis ermöglicht:
 - CI/CD Pipelines
 - Infrastructure as Code Integration
 - Skalierbare Deployments in Kubernetes
+
 
 
 
