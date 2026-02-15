@@ -1,3 +1,13 @@
+# 📦 12-Factor App
+
+## Inhaltsverzeichnis
+
+1. Codebase
+2. Dependencies
+3. Config
+
+---
+
 # 📦 12-Factor App – Warum?
 
 ## Hintergrund
@@ -176,5 +186,6 @@ Eine saubere Codebasis ermöglicht:
 - CI/CD Pipelines
 - Infrastructure as Code Integration
 - Skalierbare Deployments in Kubernetes
+
 
 
