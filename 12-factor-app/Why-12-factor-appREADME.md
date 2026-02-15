@@ -151,4 +151,51 @@ Eine saubere Codebase ermöglicht:
 - Continuous Integration
 - Infrastructure as Code Integration
 - 
+# 1️⃣ Codebase
+
+## Definition
+
+Eine Anwendung hat genau eine Codebasis, die in einem Versionskontrollsystem (z. B. Git) verwaltet wird.
+
+Mehrere Deployments (Development, Staging, Production) greifen auf dieselbe Codebasis zurück.
+
+---
+
+## Ziel
+
+- Einheitliche Quelle für den Anwendungscode
+- Vermeidung von Code-Duplikaten
+- Saubere Zusammenarbeit im Team
+- Reproduzierbare Builds
+
+---
+
+## Git als Grundlage
+
+Git ermöglicht:
+
+- Parallele Entwicklung
+- Versionierung
+- Nachvollziehbarkeit
+- Zusammenarbeit über zentrale Plattformen wie GitHub oder GitLab
+
+---
+
+## Microservices Kontext
+
+Jeder eigenständige Service hat eine eigene Codebasis.
+
+Mehrere unabhängige Anwendungen dürfen sich keine Codebasis teilen.
+
+---
+
+## DevOps-Relevanz
+
+Eine einzelne Codebasis ermöglicht:
+
+- Automatisierte Builds
+- Containerisierung
+- CI/CD Pipelines
+- Skalierbare Deployments
+- Infrastructure as Code Integration
 
