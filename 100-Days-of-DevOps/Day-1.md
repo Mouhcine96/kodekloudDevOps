@@ -39,7 +39,7 @@ Service accounts should:
 
 ### 1️⃣ Connect to App Server 2
 
-#```bash
+# ```bash
 ssh steve@172.16.238.11
 
 ---
