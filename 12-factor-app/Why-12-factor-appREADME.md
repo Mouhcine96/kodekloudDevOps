@@ -106,3 +106,49 @@ Moderne Anwendungen dürfen nicht an eine einzelne Maschine gebunden sein.
 Sie müssen portabel, skalierbar und unabhängig von der Infrastruktur funktionieren.
 
 Genau dafür existiert die 12-Factor App Methodik.
+
+# 1️⃣ Codebase
+
+## Definition
+
+Eine Anwendung hat genau eine Codebasis, die in einem Versionskontrollsystem verwaltet wird (z. B. Git).
+
+Mehrere Deployments (z. B. Development, Staging, Production) greifen auf dieselbe Codebasis zurück.
+
+---
+
+## Ziel
+
+- Keine getrennten Repositories für dev/prod
+- Keine Code-Duplikate
+- Keine Umgebungs-spezifischen Branches als Ersatz für Konfiguration
+
+---
+
+## Falsch
+
+- app-dev Repository
+- app-prod Repository
+- Manuelle Codeanpassungen pro Umgebung
+
+---
+
+## Richtig
+
+- Ein Repository
+- Unterschiedliche Deployments über Konfiguration
+- CI/CD Pipeline für alle Umgebungen
+
+---
+
+## DevOps-Bezug
+
+Eine saubere Codebase ermöglicht:
+
+- Automatisierte Builds
+- Containerisierung
+- Reproduzierbare Deployments
+- Continuous Integration
+- Infrastructure as Code Integration
+- 
+
